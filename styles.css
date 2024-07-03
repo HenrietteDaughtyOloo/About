@@ -1,0 +1,147 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    color: #03787C;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.toggle {
+    display: none;
+}
+
+#heading h3 {
+    color: #03787C;
+}
+
+#heading {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+#heading h1 {
+    font-size: 45px;
+}
+
+.homePic {
+    margin-top: -1%;
+    border-radius: 50px;
+}
+
+.homePic img {
+    border-radius: 150px 0px;
+}
+
+.button {
+    display: flex;
+    gap: 10px;
+}
+
+.primary-btn {
+    background-color: #03787C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.primary-btn i {
+    margin-left: 5px;
+}
+
+.margin {
+    height: 40vh;
+}
+.socials a {
+    color: rgb(14, 13, 13);
+    font-size: 20px;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .margin {
+        height: 40vh;
+    }
+    .hero {
+        padding-top: 50%;
+        background-position: right;
+    }
+    .container {
+        flex-direction: column-reverse;
+    }
+    .homePic {
+        width: min-content;
+    }
+    .homePic img {
+        width: 80vw;
+        height: auto;
+        margin-top: 50px;
+    }
+    .button {
+        display: flex;
+        flex-direction: row;
+    }
+    header ul {
+        display: none;
+        flex-direction: column;
+    }
+    /* .toggle {
+        display: block;
+        color: #03787C;
+        font-size: 30px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        padding: 10px;
+        cursor: pointer;
+    } */
+    .mobile-nav {
+        display: flex;
+    }
+}
